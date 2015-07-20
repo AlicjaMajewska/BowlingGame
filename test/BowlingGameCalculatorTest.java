@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class BowlingGameCalculatorTest {
 	private BowlingGameCalculatorImpl calc;
-
 	@Before
 	public void before() {
 		calc = new BowlingGameCalculatorImpl();

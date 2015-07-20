@@ -51,5 +51,4 @@ public class BowlingGameCalculatorImpl implements BowlingGameCalculator {
 		}
 		return sum;
 	}
-
 }

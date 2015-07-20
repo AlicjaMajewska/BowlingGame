@@ -75,5 +75,4 @@ public class Round {
 		return (isStrike() || listOfRolls.size() == 2);
 
 	}
-
 }
