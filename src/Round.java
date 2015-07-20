@@ -73,6 +73,6 @@ public class Round {
 
 	public boolean isEndOfRound() {
 		return (isStrike() || listOfRolls.size() == 2);
-
 	}
+
 }
