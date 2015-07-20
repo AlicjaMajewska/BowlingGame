@@ -17,10 +17,6 @@ public class Round {
 		return listOfRolls;
 	}
 
-//	public Round(int firstRoll) {
-//		listOfRolls.add(firstRoll);
-//	}
-
 	public Integer getRoll(int index) {
 		return listOfRolls.get(index);
 	}
@@ -69,17 +65,15 @@ public class Round {
 		}
 		return sumOfRound;
 
-	
 	}
 
 	private boolean hasNext() {
 		return nextRound != null;
 	}
-	
-	public boolean isEndOfRound(){
-		return (isStrike() || listOfRolls.size() == 2) ;
-			 
-					
+
+	public boolean isEndOfRound() {
+		return (isStrike() || listOfRolls.size() == 2);
+
 	}
 
 }

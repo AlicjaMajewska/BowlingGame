@@ -30,9 +30,9 @@ public class BowlingGameCalculatorImpl implements BowlingGameCalculator {
 
 	@Override
 	public boolean isFinished() {
-		return isLastRound() && rounds.getLast().isEndOfRound() && !isBonusRollAllowed();
+		return isLastRound() && rounds.getLast().isEndOfRound()
+				&& !isBonusRollAllowed();
 	}
-
 
 	private boolean isLastRound() {
 		return rounds.size() == NUMBER_OF_ROUNDS;
@@ -50,15 +50,6 @@ public class BowlingGameCalculatorImpl implements BowlingGameCalculator {
 			sum += round.getScore();
 		}
 		return sum;
-	}
-
-	public void displayList() {
-		for (Round roll : rounds) {
-			for (Integer r : roll.getListOfRolls()) {
-				System.out.print(r + " ");
-			}
-			System.out.println(roll.sumOfRound());
-		}
 	}
 
 }
